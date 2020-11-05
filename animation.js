@@ -4,6 +4,20 @@ const c = canvas.getContext("2d");
 canvas.height = window.innerHeight;
 canvas.width = window.innerWidth;
 
+let ballArray = [];
+let colors = [
+  "#92B02A",
+  "#CFFC30",
+  "#FC23A9",
+  "#07B05B",
+  "#17FC8A",
+  "#56FEC0",
+  "#4EE683",
+  "#62FC6D",
+  "#76E64E",
+  "#BDFE56",
+];
+
 window.addEventListener("resize", function () {
   canvas.height = window.innerHeight;
   canvas.width = window.innerWidth;
@@ -18,6 +32,7 @@ window.addEventListener("click", function () {
     canvas.style.backgroundColor = "black";
   }
 });
+
 class Ball {
   constructor(x, y, dx, dy, radius, gravity, friction, color) {
     this.x = x;
@@ -56,20 +71,6 @@ class Ball {
     };
   }
 }
-
-let ballArray = [];
-let colors = [
-  "#92B02A",
-  "#CFFC30",
-  "#FC23A9",
-  "#07B05B",
-  "#17FC8A",
-  "#56FEC0",
-  "#4EE683",
-  "#62FC6D",
-  "#76E64E",
-  "#BDFE56",
-];
 
 function init() {
   ballArray = [];
