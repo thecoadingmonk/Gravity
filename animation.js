@@ -31,6 +31,7 @@ window.addEventListener("click", function () {
   } else {
     canvas.style.backgroundColor = "black";
   }
+  init();
 });
 
 class Ball {
