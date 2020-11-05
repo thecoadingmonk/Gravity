@@ -1,4 +1,4 @@
 # Gravity
 Simple canvas graphics to demonstrate gravity
 
-[Link](https://thecoadingmonk.github.io/gravity/)
+[Check here](https://thecoadingmonk.github.io/gravity/)
